@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname "*.gif" -exec sh -c 'for file do printf "%s\n" "${file%.*}" | rev | sort -f | rev; done' sh {} +
+find . -type f -name "*.gif" -print0 | tr -d '\0' | rev | cut -c 5- | rev | sort -f | uniq
