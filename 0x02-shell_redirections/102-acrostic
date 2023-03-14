@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c 1 FILENAME | tr -d '\n' | paste -sd ''
+cut -c 1 acrostic.txt | tr -d '\n' | paste -sd ''
